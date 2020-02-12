@@ -5,7 +5,7 @@ provider "aws" {
 module "detect_unencrypted_ebs_volume" {
   source           = "git@github.com:cloudmitigator/reflex.git//modules/cwe_sns_email"
   rule_name        = "DetectUnencryptedEBSVolume"
-  rule_description = "Rule to check when MFA Devices are Deactivated"
+  rule_description = "Rule to check when EBS volumes are created without encryption."
 
   event_pattern = <<PATTERN
 {
