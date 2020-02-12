@@ -23,7 +23,7 @@ module "detect_unencrypted_ebs_volume" {
       "CreateVolume"
     ],
     "responseElements": {
-      "encrypted": false
+      "encrypted": [false]
     }
   }
 }
