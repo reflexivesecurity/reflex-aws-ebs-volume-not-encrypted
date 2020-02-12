@@ -21,7 +21,7 @@ module "detect_unencrypted_ebs_volume" {
     ],
     "eventName": [
       "CreateVolume"
-    ]
+    ],
     "responseElements": {
       "encrypted": false
     }
