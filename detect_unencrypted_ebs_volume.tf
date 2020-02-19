@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 module "detect_unencrypted_ebs_volume" {
   source           = "git@github.com:cloudmitigator/reflex.git//modules/cwe_sns_email?ref=v0.0.1"
   rule_name        = "DetectUnencryptedEBSVolume"
