@@ -29,7 +29,6 @@ module "detect_unencrypted_ebs_volume" {
 }
 PATTERN
 
-  topic_name = "DetectUnencryptedEBSVolume"
   target_id  = "DetectUnencryptedEBSVolume"
   sns_topic_arn = var.sns_topic_arn
 }
