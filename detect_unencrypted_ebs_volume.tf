@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "detect_unencrypted_ebs_volume" {
-  source           = "git@github.com:cloudmitigator/reflex.git//modules/cwe_sns_email?ref=v0.0.1"
+  source           = "git@github.com:cloudmitigator/reflex.git//modules/cwe_sns_email?ref=v0.2.0"
   rule_name        = "DetectUnencryptedEBSVolume"
   rule_description = "Rule to check when EBS volumes are created without encryption."
 
@@ -31,5 +31,5 @@ PATTERN
 
   topic_name = "DetectUnencryptedEBSVolume"
   target_id  = "DetectUnencryptedEBSVolume"
-  email      = var.email
+  sns_topic_arn = var.sns_topic_arn
 }
