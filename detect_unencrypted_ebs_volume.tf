@@ -34,7 +34,7 @@ PATTERN
   }
 
   queue_name    = "DetectUnencryptedEBSVolume"
-  delay_seconds = 60
+  delay_seconds = 0
 
   target_id  = "DetectUnencryptedEBSVolume"
 
