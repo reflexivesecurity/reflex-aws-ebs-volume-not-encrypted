@@ -1,5 +1,5 @@
 module "detect_unencrypted_ebs_volume" {
-  source           = "git::https://github.com/cloudmitigator/reflex-engine.git//modules/cwe_lambda?ref=v0.5.2"
+  source           = "git::https://github.com/cloudmitigator/reflex-engine.git//modules/cwe_lambda?ref=v0.5.7"
   rule_name        = "DetectUnencryptedEBSVolume"
   rule_description = "Rule to check when EBS volumes are created without encryption."
 
