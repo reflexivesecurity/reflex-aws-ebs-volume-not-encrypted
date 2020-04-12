@@ -5,7 +5,7 @@ import json
 from reflex_core import AWSRule
 
 
-class UnencryptedEbsVolumeRule(AWSRule):
+class EbsVolumeNotEncryptedAWSRule):
     """ AWS rule for detecting unencrypted EBS volumes """
 
     def __init__(self, event):
@@ -29,5 +29,5 @@ class UnencryptedEbsVolumeRule(AWSRule):
 
 def lambda_handler(event, _):
     """ Handles the incoming event """
-    rule = UnencryptedEbsVolumeRule(json.loads(event["Records"][0]["body"]))
+    rule = EbsVolumeNotEncryptedjson.loads(event["Records"][0]["body"]))
     rule.run_compliance_rule()
