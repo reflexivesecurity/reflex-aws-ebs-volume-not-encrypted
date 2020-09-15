@@ -1,5 +1,5 @@
 module "cwe" {
-  source      = "git::https://github.com/cloudmitigator/reflex-engine.git//modules/cwe?ref=v2.0.1"
+  source      = "git::https://github.com/cloudmitigator/reflex-engine.git//modules/cwe?ref=v2.1.0"
   name        = "EbsVolumeNotEncrypted"
   description = "Rule to check when EBS volumes are created without encryption."
 
